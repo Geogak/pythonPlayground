@@ -1,6 +1,7 @@
 import random
 from datetime import datetime
 from csv import writer
+
 def append_list_as_row(fileName, listOfElem):
     with open(fileName, 'a+', newline='') as writeObj:
         csvWriter = writer(writeObj)
