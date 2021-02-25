@@ -26,6 +26,6 @@ while userGuess != num:
         print ("too low")
 
 now = datetime.now()
-ledgerEntry = [userName,guessCount,num,now]
+ledgerEntry = [userName,guessCount,num,maxNum,now]
 append_list_as_row('scores.csv',ledgerEntry)
 print("You guessed",num,"correctly in",guessCount,"tries!")
