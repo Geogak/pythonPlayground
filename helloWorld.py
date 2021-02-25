@@ -6,7 +6,7 @@ def append_list_as_row(fileName, listOfElem):
         csvWriter = writer(writeObj)
         csvWriter.writerow(listOfElem)
 
-print("hello world")
+print("Guess The Number Game!")
 userName = input("what is your name? : ")
 print("welcome ",userName)
 num = random.randint(1,1000)
