@@ -10,13 +10,16 @@ def append_list_as_row(fileName, listOfElem):
 print("Guess The Number Game!")
 userName = input("what is your name? : ")
 print("welcome ",userName)
-num = random.randint(1,1000)
+minNum = 1
+maxNum = input("Choose a max number : ")
+num = random.randint(minNum,int(maxNum))
 userGuess = 0
 guessCount = 0 
+promptString = "guess a number between " + str(minNum) + " and " + str(maxNum) + ": "
 
 while userGuess != num:
     guessCount += 1
-    userGuess = int(input("guess a number between 1 and 1000 : "))
+    userGuess = int(input(promptString))
     if userGuess > num:
         print ("too high")
     if userGuess < num:
